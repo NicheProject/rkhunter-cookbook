@@ -481,9 +481,9 @@ SCRIPTWHITELIST=/bin/fgrep
 SCRIPTWHITELIST=/bin/which
 SCRIPTWHITELIST=/usr/bin/groups
 SCRIPTWHITELIST=/usr/bin/ldd
-SCRIPTWHITELIST=/usr/bin/lwp-request
+#SCRIPTWHITELIST=/usr/bin/lwp-request
 SCRIPTWHITELIST=/usr/sbin/adduser
-SCRIPTWHITELIST=/usr/sbin/prelink
+#SCRIPTWHITELIST=/usr/sbin/prelink
 <% node['rkhunter']['scriptwhitelist'].each do |item| %>
 SCRIPTWHITELIST=<%= item %>
 <% end %>
